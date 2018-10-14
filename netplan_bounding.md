@@ -1,6 +1,6 @@
 > Documentation
 ```
-https://git.launchpad.net/netplan/tree/doc/netplan.md?_ga=2.168659361.1462401523.1539532048-1762523469.1524738621
+https://git.launchpad.net/netplan/tree/doc/netplan.md
 ```
 > /etc/netplan/01-netcfg.yaml
 ```
