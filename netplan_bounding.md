@@ -1,3 +1,7 @@
+> Documentation
+```
+https://git.launchpad.net/netplan/tree/doc/netplan.md?_ga=2.168659361.1462401523.1539532048-1762523469.1524738621
+```
 > /etc/netplan/01-netcfg.yaml
 ```
 network:
@@ -5,8 +9,7 @@ network:
   renderer: networkd
   ethernets:
     bound_inf:
-      match: 
-        name: eno*
+      match: {name: "eno*"}
       optional: true  
   bonds:
     bond0:
