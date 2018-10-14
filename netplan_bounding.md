@@ -4,22 +4,20 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    bond-ports:
-      dhcp4: no
-      match:
-        name: ens*
+    bound_inf:
+      match: 
+        name: eno*
+      optional: true  
   bonds:
     bond0:
-      dhcp4: no
-      interfaces: [bond-ports]
+      interfaces: [bound_inf]
+      addresses: [192.168.1.101/24]
+      gateway4: 192.168.1.1
+      nameservers:
+         addresses: [192.168.1.2]
       parameters:
         mode: 802.3ad
-  bridges:
-    br0:
-      addresses: [XXX.XXX.XXX.40/24]
-      gateway4: XXX.XXX.XXX.1
-       nameservers:
-            addresses: [XXX.XXX.XXX.1]
-      interfaces:
-        - bond0
+        lacp-rate: fast
+        mii-monitor-interval: 100
+
 ```
