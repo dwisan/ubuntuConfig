@@ -1,3 +1,4 @@
+```
 kernel.sysrq = 0
 net.ipv4.ip_forward = 1
 kernel.pid_max = 2000000
@@ -32,3 +33,4 @@ net.ipv4.conf.all.send_redirects = 0
 net.ipv4.conf.all.accept_redirects = 0
 net.ipv4.conf.all.accept_source_route = 0
 net.ipv4.conf.all.log_martians = 1
+```
