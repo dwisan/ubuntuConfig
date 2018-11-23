@@ -6,7 +6,6 @@ kernel.threads-max = 63484
 net.core.somaxconn = 65535
 net.ipv4.conf.default.rp_filter = 1
 net.ipv4.tcp_syncookies = 1
-sysctl: cannot stat /proc/sys/net/ipv4/tcp_tw_recycle: No such file or directory
 net.ipv4.tcp_congestion_control = cubic
 net.ipv4.tcp_keepalive_time = 900
 net.ipv4.tcp_keepalive_intvl = 60
